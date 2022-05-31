@@ -27,3 +27,28 @@ If the value of 8p-7 is a perfect square, then the value at that position 'p' wo
 
 //Please try yourself before watch this code
 
+#include <bits/stdc++.h>
+using namespace std;
+#define nl "\n"
+
+void fast()
+{
+    ios_base::sync_with_stdio(false);cin.tie(NULL);
+}
+
+int main()
+{
+    long long int t , n; cin >> t;
+    while(t--){
+        long long  p ;
+        fast();
+        cin >> p;
+        n = (-1+sqrt(double(8*p-7)))/2.0;
+        if(p == (n*(n+1)/2)+1) cout << 1;
+        else cout << 0;
+        if(t>= 1) cout << " ";
+    }
+    cout << nl;
+
+    return 0;
+}
