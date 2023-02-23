@@ -3,26 +3,10 @@ using namespace std;
 
 #define ll      long long
 #define nl      cout << "\n";
-#define pi      (2*acos(0))
-#define case    cout << "Case " << case_number << ": "; case_number++;
-#define fast    ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-#define MAX_INT 1000000007
-#define YES     "Yes"
-#define NO      "No"
-
-int case_number = 1;
-//knights move
-int dr[] = {2, 2, -2, -2, 1, 1, -1, -1};
-int dc[] = {1, -1, 1, -1, 2, -2, 2, -2};
-
-
-void file();
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
-
 ll stone[22];
 ll totalsum = 0;
 int n;
-ll ans= MAX_INT;
+ll ans= INT_MAX;
 void backtrack(ll pos, ll sum){
     
     if(pos == n){

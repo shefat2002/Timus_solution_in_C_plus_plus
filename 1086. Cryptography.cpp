@@ -1,6 +1,3 @@
-//1086. Cryptography
-//Please try yourself before watch this code
-
 #include <bits/stdc++.h>
 using namespace std;
 #define mx 1000004
